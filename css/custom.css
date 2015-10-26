@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Round';
+    src: url(../fonts/Round.ttf);
+}
+
+body h1, h2, h3, h5, li, a, footer{
+    font-family: 'Round';
+}
+
+
 .navigation{
     padding: 10px;
 }
@@ -52,43 +62,28 @@ body{
 }
 
 a.anchor {
-    display: block;
-    position: relative;
-    top: -30px;
-    visibility: hidden;
+    margin-top: -50px;
+    padding-bottom: 50px; 
+    display: block; 
 }
 
 
 .body{
     background: white;
-}
-
-.about{
-    margin-bottom: 50px;
     text-align: center;
 }
 
-.about h1{
+.body h1{
     font-size: 50px;
     margin-bottom: 50px;
 }
 
-.about h2{
+.body h2{
     font-size: 20px;
 }
 
-.about h3{
+.body h3{
     font-size: 20px;
-}
-
-.projects{
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.projects h1{
-    font-size: 50px;
-    margin-bottom: 50px;
 }
 
 #carousel-example-generic{
@@ -100,7 +95,9 @@ html{
 }
 
 hr {
-    width: 70%;
+    width: 60%;
+    size: 2px;
+    color:gray;
 }
 
 footer p{

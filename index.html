@@ -13,6 +13,7 @@
     <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!--<script src="js/jquery-1.11.3.min.js"></script>-->
         <script src="js/bootstrap.min.js"></script> 
         <a class="anchor" name="Home"></a>
         <div class="header">
@@ -26,7 +27,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">TC</a>
+                        <a class="navbar-brand" href="#Home">TC</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,11 +55,11 @@
             </div>
         </div>
         
-        <div class="container-fluid body">
-            <a class="anchor" name="About"></a>
-            <hr>
+        <div class="container-fluid body">   
             
-           <div class="row about">
+            <a class="anchor" name="About"></a>
+            <div class="row about">
+               <hr>
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <h1><b>About Me</b></h1>
@@ -75,18 +76,18 @@
                 </div>
                 <div class="col-md-2"></div>
             </div>
-            <hr>
+            
+            <a class="anchor" name="Projects"></a>
             <div class="row projects">
+                <hr>
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <a class="anchor" name="Projects"></a>
                     <h1><b>Projects</b></h1>
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-bottom:50px">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                             </ol>
 
                             <!-- Wrapper for slides -->
@@ -113,14 +114,72 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                </div>
+                        <div class="carousel-text">
+                            <div id="text1" style="display:block">
+                                <h2>Multiplayer Snakes</h2>
+                                <h3>Web based multiplayer snake game. Responsible for Node.js and Socket.io server
+along with partial JavaScript implementation of client side interactions and the
+actual game.</h3>
+                            </div>
+                            <div id="text2" style="display:none">
+                                <h2>Journey</h2>
+                                <h3>Road trip planning website that provides hotel and restaurant options along a given
+start and end location based on how far one wishes to drive each day. Responsible
+for Node.js backend, partial implementation of HERE API, and HTML/CSS.</h3>
+                            </div>
+                        </div>
+                    </div>
                 <div class="col-md-2"></div>
             </div>
             <hr>
             <footer>
                 <p>© 2015 Tianrui Chen</p>
             </footer>
-        </div>    
+        </div> 
+        
+        <script>
+            var count = 1,
+                pastCount,
+                maxCount = 2;
+            
+            $('.carousel').carousel({
+                interval: false
+            });
+            
+            $('#carousel-example-generic').on('slide.bs.carousel', function (data) {
+                if (data.direction === "left"){
+                    pastCount = count;
+                    count++;
+                    if (count > maxCount){
+                        count = 1;
+                    }
+                }
+                else{
+                    pastCount = count;
+                    count--;
+                    if (count < 1){
+                        count = maxCount;
+                    }
+                }
+                
+                $('#text' + pastCount).hide();
+                $('#text' + count).fadeIn();
+            });
+        </script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                $('a[href*=#]:not([href=#carousel-example-generic])').click(function() {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 750);
+                        return false;
+                    }
+                });
+            });
+        </script>
     </body>
 
 </html>
