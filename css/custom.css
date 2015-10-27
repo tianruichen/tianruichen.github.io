@@ -38,7 +38,7 @@ body h2, h3, h5, li{
 }
 
 .header{ 
-    background: linear-gradient( rgba(0, 0, 30, 0.9), rgba(255, 195, 49, 0)), url(../img/sun.jpg) no-repeat 50% 0% fixed;
+    background: linear-gradient( rgba(40, 19, 14, 0.9), rgba(255, 195, 49, 0)), url(../img/sun.jpg) no-repeat 50% 0% fixed;
     /*background-color: darkgrey;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -185,7 +185,7 @@ hr {
 }
 .footer2{
     /*background-color: rgba(192, 184, 142, 0.8);*/
-    background: linear-gradient(rgba(255, 195, 49, 0.3), rgba(255, 195, 49, 0.3)), url(../img/sun.jpg) no-repeat 50% 0% fixed;
+    background: linear-gradient(rgba(255, 195, 49, 0.3), rgba(40, 19, 14, 0.3)), url(../img/sun.jpg) no-repeat 50% 0% fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
