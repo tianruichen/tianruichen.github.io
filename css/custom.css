@@ -174,7 +174,7 @@ hr {
 }
 
 .footer1{
-    background:linear-gradient( rgba(40, 19, 14, 0.8), rgba(40, 19, 14, 0.8)), url(../img/sun.jpg) no-repeat 50% 0% fixed;
+    background: rgba(40, 19, 14, 1);
     text-align: center;
     width: 100%;
     padding: 50px;
