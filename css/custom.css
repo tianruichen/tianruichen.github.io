@@ -10,8 +10,17 @@ body h2, h3, h5, li{
     font-family: "Lato";
 }
 
-.navigation{
-    background-color: rgba(192, 184, 142, 0.1);
+body{
+    background: white;
+}
+
+/*NAVIGATION STUFF- -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -*/
+.navbar .brand, .navbar .nav > li > a:hover {
+    background: rgba(243, 134, 48, 0.6);
+}
+
+.navbar .brand, .navbar .nav > li > a:active {
+    background: rgba(105, 210, 231, 0.6);
 }
 
 .navigation a{
@@ -19,139 +28,186 @@ body h2, h3, h5, li{
     font-size: 20px;
 }
 
-
-.nav2{
-    /*background-color: rgba(40, 19, 14, 0.5);*/
-    width: 100%;
-    padding: 10px;
+.affix .navigation{
+    background: white;
 }
 
-.center{
-    text-align: center;
-    /*text-shadow: 2px 2px rgba(131, 207, 255, 1);*/
-    margin-top: 220px;
+.affix a{
+    color: rgba(105, 210, 231, 1);
+}
+
+.affix .navigation .nav > li > a:hover {
+    background: rgba(243, 134, 48, 1);
     color: white;
 }
 
-.center h2{
-    margin-bottom: 50px;
+.affix .navigation .nav > li > a:active {
+    background: rgba(105, 210, 231, 1);
 }
 
+a.anchor {
+    display: block; 
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
+
+/*HEADER STUFF -    -   -   -   -   -   -   -   -   -   -   -   -   -   -*/
 .header{ 
-    background: linear-gradient( rgba(40, 19, 14, 0.9), rgba(255, 195, 49, 0)), url(../img/sun.jpg) no-repeat 50% 0% fixed;
+    background: linear-gradient(167deg, rgba(243, 134, 48, 0.4), rgba(105, 210, 231, 0.9)), url(../img/koiplz.jpg) no-repeat center center; 
     /*background-color: darkgrey;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 10px;
     padding-top: 20px;
     min-height: 100vh;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    width: 100%;
 }
 
-.header h1{
-    font-size: 60px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+.header .center2{
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    ////background: rgba(224, 228, 204, 0.5);
 }
 
-.header h2{
-    font-size: 40px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+.header .center .container-fluid .row{
+    width: 100%;
+    margin: 0;
+    padding: 100px;
 }
 
-.header h5{
-    font-size: 20px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+.header .center .container-fluid{
+    background: rgba(243, 134, 48, 0);
 }
 
-.affix .navigation{
-    background: white;
-}
-
-.affix .nav2{
-    background: none;
-    display: none;
-}
-
-.affix a{
-    color: rgba(59, 30, 14, 1);
-}
-
-.affix-top{
-}
-
-a.anchor {
-    display: block; 
-    padding-top: 30px;
-    margin-top: -30px;
-}
-
-
-.body{
-    background-color:#ffffff;
+.center{
     text-align: center;
+    
+    color: white;
 }
-
-.body h1{
-    font-size: 50px;
+.center h2{
     margin-bottom: 50px;
 }
-
-.body h2{
+.header h1{
+    font-size: 60px;
+    
+}
+.header h2{
+    font-size: 40px;
+}
+.header h5{
     font-size: 20px;
 }
 
+/*Body Stuff -  -   -   -   -   -   -   -   -   -   -   -   -   -   -*/
+.body{
+    text-align: center;
+}
+.body .container-fluid{
+    padding: 0;
+}
+.body .container-fluid .row{
+    width: 100%;
+    margin: 0;
+}
+.body h1{
+    font-size: 50px;
+}
+.body h2{
+    font-size: 30px;
+}
 .body h3{
     font-size: 20px;
 }
 
-.about, .skills, .projects, .contacts{
-    margin-bottom: 50px;
+.about, .full-skills, .projects, .contacts{
+    min-height: 100vh;    
+    /*margin-bottom: 50px;*/
 }
 
-.about h1, .skills h1, .projects h1, .contacts h1{
-    color: rgba(104, 65, 16, 1);
+
+
+.body >.container-fluid .about{
+    background: white;
+}
+.body >.container-fluid .about h1{
+    color: rgba(250, 105, 0, 1);
+}
+.body>.container-fluid .about .img-shrink{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px;
 }
 
-.spacer{
-    margin: 0;
-    padding: 0;
+
+.body >.container-fluid .full-skills{
+    background: rgba(167, 219, 219, 1.0);
+}
+.body >.container-fluid .full-skills h1{
+    color: white; 
+}
+.body >.container-fluid .skills h3, li{
+    color: white; 
 }
 
-.skills .nopadding {
-    margin: 0;
-    padding: 0;
+
+
+.body >.container-fluid .projects{
+    background: white;
+}
+.body >.container-fluid .projects h1{
+    color: rgba(250, 105, 0, 1); 
 }
 
+
+
+.body >.container-fluid .contacts{
+    background: rgba(167, 219, 219, 1.0);
+}
+.body >.container-fluid .contacts h1{
+    color: white; 
+}
+.body >.container-fluid .contacts h2{
+    color: white; 
+}
+
+/*SKILLS SECTION STUFF -    -   -   -   -   -   -   -   -   -   -   -   -   -   -*/
+.full-skills table{
+    border-spacing: 0;
+    
+}
+.full-skills table tr{
+
+    
+}
 .round-img{
-    display: block;
-    width: 100%;
-    margin: 0px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 60px;
+    display: inline;
+    width: 250px;
+    margin: 35px;
+    padding: 0px;
+    border-radius: 0px;
 }
-
 .overlay {
     display: none;
     position: absolute;
     top:0;
     left:0;
-    width:100%;
-    height:100%;
-    
     padding: 50px;
+    padding-top: 40px;
+    width:100%;
+    height:100%;   
 }
-
 .overlay h3{
-    font-size: 30px;
+    font-size: 25px;
 }
-
 .overlay li{
     font-size: 20px;
 }
-
 .img-text1, .img-text2,.img-text3,.img-text4 {
     display: inline-block;
     position: relative; 
@@ -159,33 +215,20 @@ a.anchor {
 }
 
 
-
-#carousel-example-generic{
-    
+/*THIS IS JUST HERE TO MAKE THE CAROUSEL WORK-  -   -   -   -   -   -   -   -   -   -*/
+#carousel-example-generic{  
 }
 
-html{
-    background-color:rgba(192, 184, 142, 0.3);
-}
 
-hr {
-    width: 80%;
-    border: none;
-    height: 3px;
-    /* Set the hr color */
-    background-color: rgba(59, 30, 14, 1); /* Modern Browsers */
-}
-
+/*FOOTER STUFF -    -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -*/
 .footer1{
-    background: rgba(40, 19, 14, 1);
+    background: rgba(243, 134, 48, 1);
     text-align: center;
     width: 100%;
-    padding: 20px;
-    margin-top: 260px;
+    padding: 25px;
 }
 .footer2{
-    /*background-color: rgba(192, 184, 142, 0.8);*/
-    background: linear-gradient(rgba(255, 195, 49, 0.3), rgba(40, 19, 14, 0.3)), url(../img/sun.jpg) no-repeat 50% 0% fixed;
+    background-color: rgba(105, 210, 231, 1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -199,19 +242,19 @@ footer p{
     font-size: 16px;
 }
 
+
+/*DAT TROLL BLINKING CURSOR   - -   -   -   -   -   -   -   -   -   -   -   -   -*/
 .blinking-cursor {
     font-family: "Lato";
     font-weight: 100;
-    font-size: 40px;
-    color: #FFFFFF;
+    font-size: 35px;
+    color: aqua;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
     -ms-animation: 1s blink step-end infinite;
     -o-animation: 1s blink step-end infinite;
     animation: 1s blink step-end infinite;
-    text-shadow: none;
 }
-
 @keyframes "blink" {
   from, to {
     color: transparent;
@@ -220,7 +263,6 @@ footer p{
     color: white;
   }
 }
-
 @-moz-keyframes blink {
   from, to {
     color: transparent;
@@ -229,7 +271,6 @@ footer p{
     color: white;
   }
 }
-
 @-webkit-keyframes "blink" {
   from, to {
     color: transparent;
@@ -238,22 +279,20 @@ footer p{
     color: white;
   }
 }
-
 @-ms-keyframes "blink" {
   from, to {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }
-
 @-o-keyframes "blink" {
   from, to {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }
 
