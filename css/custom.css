@@ -1,14 +1,19 @@
 @font-face {
-    font-family: Round;
-    src: url(../fonts/Round.ttf);
+    font-family: 'Round';
+    src: url("../fonts/Round.ttf");
 }
+
 body h1, a, footer{
-    font-family: Round;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700px;
 }
 
 body h2, h3, h5, li{
-    font-family: "Lato";
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
+
+body .navbar 
 
 body{
     background: white;
@@ -54,7 +59,8 @@ a.anchor {
 
 /*HEADER STUFF -    -   -   -   -   -   -   -   -   -   -   -   -   -   -*/
 .header{ 
-    background: linear-gradient(167deg, rgba(243, 134, 48, 0.4), rgba(105, 210, 231, 0.9)), url(../img/koiplz.jpg) no-repeat center center; 
+    /*rgba(243, 134, 48, 0.4)*/
+    background: url(../img/dots.jpg) no-repeat center center fixed; 
     /*background-color: darkgrey;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -71,7 +77,6 @@ a.anchor {
     margin-top: 80px;
     padding-top: 50px;
     padding-bottom: 50px;
-    ////background: rgba(224, 228, 204, 0.5);
 }
 
 .header .center .container-fluid .row{
@@ -80,14 +85,10 @@ a.anchor {
     padding: 100px;
 }
 
-.header .center .container-fluid{
-    background: rgba(243, 134, 48, 0);
-}
-
 .center{
     text-align: center;
-    
     color: white;
+    
 }
 .center h2{
     margin-bottom: 50px;
@@ -181,16 +182,12 @@ a.anchor {
     border-spacing: 0;
     
 }
-.full-skills table tr{
 
-    
-}
 .round-img{
     display: inline;
     width: 250px;
     margin: 35px;
     padding: 0px;
-    border-radius: 0px;
 }
 .overlay {
     display: none;
@@ -228,7 +225,7 @@ a.anchor {
     padding: 25px;
 }
 .footer2{
-    background-color: rgba(105, 210, 231, 1);
+    background: linear-gradient(167deg, rgba(105, 210, 231, 0.0), rgba(105, 210, 231, 0.0)), url(../img/dots.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
