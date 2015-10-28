@@ -60,7 +60,7 @@ a.anchor {
 /*HEADER STUFF -    -   -   -   -   -   -   -   -   -   -   -   -   -   -*/
 .header{ 
     /*rgba(243, 134, 48, 0.4)*/
-    background: url(../img/dots.jpg) no-repeat center center fixed; 
+    background: url(../img/dots2.jpg) no-repeat center center fixed; 
     /*background-color: darkgrey;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -225,7 +225,7 @@ a.anchor {
     padding: 25px;
 }
 .footer2{
-    background: linear-gradient(167deg, rgba(105, 210, 231, 0.0), rgba(105, 210, 231, 0.0)), url(../img/dots.png) no-repeat center center fixed;
+    background: linear-gradient(167deg, rgba(105, 210, 231, 0.0), rgba(105, 210, 231, 0.0)), url(../img/dots2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
