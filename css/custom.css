@@ -118,12 +118,18 @@ a.anchor {
 .header h1{
     font-size: 60px;
     
+    
 }
 .header h2{
     font-size: 40px;
+    margin-bottom: 20px;
 }
 .header h5{
-    font-size: 36px;
+    font-size: 24px;
+}
+
+.header h5 a{
+    color: white;
 }
 
 /*Body Stuff -  -   -   -   -   -   -   -   -   -   -   -   -   -   -*/
@@ -147,8 +153,16 @@ a.anchor {
     font-size: 20px;
 }
 
+.body a{
+    color: white;
+}
+
 .about, .full-skills, .projects, .contacts{
     min-height: 100vh;    
+}
+
+.contacts{
+    min-height: 75vh;
 }
 
 
@@ -164,6 +178,7 @@ a.anchor {
 }
 .body >.container-fluid .about h1{
     color: rgba(250, 105, 0, 1);
+    margin-bottom: 40px;
 }
 .body>.container-fluid .about .img-shrink{
     width: 300px;
@@ -193,7 +208,6 @@ a.anchor {
 }
 
 
-
 .body >.container-fluid .projects{
     background: white;
     box-shadow: 0px 5px 3px -3px rgba(0,0,0, 0.2); 
@@ -220,6 +234,10 @@ a.anchor {
 }
 .body >.container-fluid .contacts h1{
     color: white; 
+    margin-bottom: 40px;
+}
+.add-margin{
+    margin-bottom: 40px;
 }
 .body >.container-fluid .contacts h2{
     color: white; 
@@ -266,6 +284,10 @@ a.anchor {
 
 /*THIS IS JUST HERE TO MAKE THE CAROUSEL WORK-  -   -   -   -   -   -   -   -   -   -*/
 #carousel-example-generic{  
+    box-shadow: -2px 2px 3px rgba(0,0,0, 0.2); 
+    -moz-box-shadow: -2px 2px 3px rgba(0,0,0, 0.2); 
+    -webkit-box-shadow: -2px 2px 3px rgba(0,0,0, 0.2); 
+    -khtml-box-shadow: -2px 2px 3px rgba(0,0,0, 0.2);
 }
 
 
