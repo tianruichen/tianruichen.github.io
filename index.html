@@ -19,7 +19,7 @@
         <a class="anchor" name="Home"></a>
         
 <!--Navigation Bar Container-->          
-        <nav class="navbar navbar-fixed-top " data-spy="affix" data-offset-top="780"> 
+        <nav class="navbar navbar-fixed-top " data-spy="affix"> 
             <div class="container-fluid navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -346,6 +346,11 @@ for Node.js backend, partial implementation of HERE API, and HTML/CSS.</h3>
                 // Removes focus of the anchor link.
                     $(this).blur();
                 });
+            });
+            $('.navbar').affix({
+                offset: {
+                top: function() { return $('.header').height(); }
+                }
             });
         </script>
     </body>
