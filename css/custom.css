@@ -249,15 +249,18 @@ a.anchor {
     
 }
 
-.round-img{
-    display: block;
-    width: 250px;
-    margin: 35px;
-    padding: 0px;
+.img-responsive{
     box-shadow: -2px 2px 3px rgba(0,0,0, 0.2); 
     -moz-box-shadow: -2px 2px 3px rgba(0,0,0, 0.2); 
     -webkit-box-shadow: -2px 2px 3px rgba(0,0,0, 0.2); 
     -khtml-box-shadow: -2px 2px 3px rgba(0,0,0, 0.2);
+}
+.round-img{
+    display: block;
+    width: 250px;
+    margin: 35px;
+    padding: 0;
+
 }
 .overlay {
     display: none;
@@ -279,6 +282,9 @@ a.anchor {
     display: inline-block;
     position: relative; 
     text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -401,7 +407,7 @@ footer p{
         width: 250px;
         margin: 0;
         margin-bottom: 100px;
-        padding: 10px;
+        padding: 0;
     }
     .overlay {
         display: none;
@@ -446,9 +452,8 @@ footer p{
     .round-img{
         display: block;
         width: 250px;
-        margin: 0;
-        margin-bottom: 50px;
-        padding: 10px;
+        margin-bottom: 20px;
+        padding: 0;
     }
     .overlay {
         display: none;
@@ -471,6 +476,18 @@ footer p{
 @media only screen and (max-width : 768px) {
     .header .center2{
         padding-top: 200px;
+    }
+    .round-img{
+        display: block;
+        width: 250px;
+        margin-bottom: 80px;
+        
+    }
+    .img-responsive{
+        box-shadow: -2px 2px 3px rgba(0,0,0, 0.2); 
+        -moz-box-shadow: -2px 2px 3px rgba(0,0,0, 0.2); 
+        -webkit-box-shadow: -2px 2px 3px rgba(0,0,0, 0.2); 
+        -khtml-box-shadow: -2px 2px 3px rgba(0,0,0, 0.2);
     }
 }
 
@@ -497,12 +514,12 @@ footer p{
     .body h3{
         font-size: 18px;
     } 
+    
     .round-img{
         display: block;
         width: 250px;
-        margin: 0;
-        margin-bottom: 50px;
-        padding: 10px;
+        margin-bottom: 0;
+        
     }
     .overlay {
         display: none;
@@ -548,9 +565,7 @@ footer p{
     .round-img{
         display: block;
         width: 250px;
-        margin: 0;
-        margin-bottom: 50px;
-        padding: 10px;
+        margin-bottom: 20px;
     }
     .overlay {
         display: none;
@@ -583,6 +598,9 @@ footer p{
     .header h5{
         font-size: 12px;
     }
+    .round-img{
+        margin-bottom: 0;
+    }
 }
 @media only screen and (max-width : 320px){
     .header .center2{
@@ -612,8 +630,7 @@ footer p{
         display: block;
         width: 250px;
         margin: 0;
-        margin-bottom: 50px;
-        padding: 10px;
+        margin-bottom: 20px;
     }
     .overlay {
         display: none;
@@ -625,10 +642,10 @@ footer p{
         height:100%;   
     }
     .overlay h3{
-        font-size: 20px;
+        font-size: 18px;
     }
     .overlay li{
-        font-size: 16px;
+        font-size: 12px;
     }  
 }
 
