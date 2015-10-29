@@ -418,4 +418,8 @@ body .navbar .navbar-toggle .icon-bar {
     background-color: white;
 }
 
+.affix .navbar-header> .navbar-toggle .icon-bar{
+    background-color: rgba(105, 210, 231, 1);
+}
+
 
