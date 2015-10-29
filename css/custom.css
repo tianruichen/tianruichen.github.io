@@ -117,7 +117,7 @@ a.anchor {
     font-size: 40px;
 }
 .header h5{
-    font-size: 20px;
+    font-size: 36px;
 }
 
 /*Body Stuff -  -   -   -   -   -   -   -   -   -   -   -   -   -   -*/
@@ -307,6 +307,100 @@ footer p{
   }
 }
 
+@media only screen and (max-device-width : 1024px){
+    .header .center2{
+        padding-top: 40%;
+    }
+    .header h1{
+        font-size: 80px;
+    }
+    .header h2{
+        font-size: 40px;
+    }
+    .header h5{
+        font-size: 30px;
+    }
+    .body h1{
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
+    .body h2{
+        font-size: 40px;
+    }
+    .body h3{
+        font-size: 30px;
+    } 
+    .round-img{
+        display: block;
+        width: 250px;
+        margin: 0;
+        margin-bottom: 100px;
+        padding: 10px;
+    }
+    .overlay {
+        display: none;
+        position: absolute;
+        top:0;
+        left:0;
+        padding: 0px;
+        width:100%;
+        height:100%;   
+    }
+    .overlay h3{
+        font-size: 40px;
+    }
+    .overlay li{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-device-width : 1024px) and (orientation : landscape) {
+    .header .center2{
+        padding-top: 110px;
+    }
+    .header h1{
+        font-size: 60px;
+    }
+    .header h2{
+        font-size: 30px;
+    }
+    .header h5{
+        font-size: 20px;
+    }
+    .body h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .body h2{
+        font-size: 30px;
+    }
+    .body h3{
+        font-size: 24px;
+    } 
+    .round-img{
+        display: block;
+        width: 250px;
+        margin: 0;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    .overlay {
+        display: none;
+        position: absolute;
+        top:0;
+        left:0;
+        padding: 0px;
+        width:100%;
+        height:100%;   
+    }
+    .overlay h3{
+        font-size: 32px;
+    }
+    .overlay li{
+        font-size: 24px;
+    }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .header .center2{
@@ -314,10 +408,57 @@ footer p{
     }
 }
 
+@media only screen and (max-device-width : 768px) and (orientation : landscape) {
+    .header .center2{
+        padding-top: 0px;
+    }
+.header h1{
+        font-size: 40px;
+    }
+    .header h2{
+        font-size: 16px;
+    }
+    .header h5{
+        font-size: 14px;
+    }
+    .body h1{
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .body h2{
+        font-size: 20px;
+    }
+    .body h3{
+        font-size: 18px;
+    } 
+    .round-img{
+        display: block;
+        width: 250px;
+        margin: 0;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    .overlay {
+        display: none;
+        position: absolute;
+        top:0;
+        left:0;
+        padding: 0px;
+        width:100%;
+        height:100%;   
+    }
+    .overlay h3{
+        font-size: 20px;
+    }
+    .overlay li{
+        font-size: 16px;
+    }
+}
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
     .header .center2{
-        padding-top: 120px;
+        padding-top: 85px;
     }
     .header h1{
         font-size: 40px;
@@ -362,9 +503,24 @@ footer p{
     }
 }
 
+@media only screen and (max-device-width : 480px) and (orientation : landscape) {
+    .header .center2{
+        padding-top: 0px;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .header h2{
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    .header h5{
+        font-size: 12px;
+    }
+}
 @media only screen and (max-width : 320px){
     .header .center2{
-        padding-top: 40px;
+        padding-top: 30px;
     }
     .header h1{
         font-size: 40px;
