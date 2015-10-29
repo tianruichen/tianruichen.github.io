@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
         <title>Tianrui Chen's Page</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
@@ -19,11 +19,12 @@
         <a class="anchor" name="Home"></a>
         
 <!--Navigation Bar Container-->          
-        <nav class="navbar navbar-fixed-top " data-spy="affix"> 
+        <nav class="navbar navbar-fixed-top" data-spy="affix"> 
+            <div class= "navbar-inner">
             <div class="container-fluid navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -33,7 +34,7 @@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="navbar-collapse">
                 <!-- code for the right side of the navbar -->
                     <div class="nav-test">
                     <ul class="nav navbar-nav navbar-right">
@@ -46,7 +47,8 @@
                     </div>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
-        </nav> 
+            </div>
+        </nav>
         
 <!--Header Container-->        
         <div class="header">
@@ -54,12 +56,14 @@
             <div class="center">
                 <div class="container-fluid">
                     <div class="row">
+                        <div class="col-md-12">
                         <h1>TIANRUI CHEN</h1>
                         <h2>Programmer // Designer // Creator</h2>
                         <h5>tianrui.richard.chen@berkeley.edu</h5>
                         <h5>LinkedIn Plz</h5>
                         <h5>github.com/tianruichen/</h5>
                         <h5>Resume coming</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,7 +84,7 @@
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
                         <h1><b>ABOUT</b></h1>
-                        <img src="img/koi.jpg" alt="It'sa me, M---Richard" class="img-circle img-shrink">
+                        <img src="img/koi.jpg" alt="It'sa me, M---Richard" class="img-circle img-responsive img-shrink center-block">
                         <h2>I am a UC Berkeley student with experience in programming and web development looking
     to further develop my skills through internship opportunities in software development.</h2>
                         <h2>Additional Interests:</h2>
