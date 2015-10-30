@@ -153,10 +153,6 @@ a.anchor {
     font-size: 20px;
 }
 
-.body a{
-    color: white;
-}
-
 .about, .full-skills, .projects, .contacts{
     min-height: 100vh;    
 }
@@ -221,6 +217,10 @@ a.anchor {
     color: rgba(250, 105, 0, 1); 
 }
 
+.body>.container-fluid .projects a{
+    color: rgba(250, 105, 0, 1);
+}
+
 
 
 .body >.container-fluid .contacts{
@@ -239,6 +239,11 @@ a.anchor {
 .add-margin{
     margin-bottom: 40px;
 }
+
+.body .contacts a{
+    color: white;
+}
+
 .body >.container-fluid .contacts h2{
     color: white; 
 }
