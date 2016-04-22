@@ -115,7 +115,7 @@
                                                     <li>C#</li>
                                                     <li>Javascript</li>
                                                     <li>HTML/CSS</li>
-                                                    <li>C</li>
+                                                    <li>Python</li>
                                                 </ul>
                                             </div>
                                         </div> 
@@ -149,7 +149,6 @@
                                                     <li>Unity</li>           
                                                     <li>Android Studio</li>
                                                     <li>Photoshop</li>
-                                                    <li>Microsoft Word</li>
                                                 </ul>
                                             </div>
                                         </div>    
@@ -189,11 +188,20 @@
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                             </ol>
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
+                                    <img src="img/multiblox.jpg" alt="Multiblox">
+                                </div>
+                                <div class="item">
+                                    <img src="img/notehub.jpg" alt="Notehub">
+                                </div>
+                                <div class="item">
                                     <img src="img/snakes.jpg" alt="Snakes">
                                 </div>
                                 <div class="item">
@@ -217,6 +225,17 @@
                     
                         <div class="carousel-text">
                             <div id="text1" style="display:block">
+                                <h2>Multiblox</h2>
+                                <h3>Web based multiplayer cooperative Tetris game. Responsible for Node.js and Socket.io server along with Javascript implementation of game mechanics and graphics.</h3>
+                                <h3><a href="http://csua.berkeley.edu:3000" target="_blank">Play</a></h3>
+                                <h3><a href="https://github.com/tianruichen/Multiblox" target="_blank">Code</a></h3>
+                            </div>
+                            <div id="text2" style="display:none">
+                                <h2>Notehub</h2>
+                                <h3>Android app platform for students to easily share and download notes from different classes. Responsible for Java implementation of camera integration and sending information to Parse database.</h3>
+                                <h3><a href="https://play.google.com/store/apps/details?id=org.mobiledevelopersberkeley.notehub&hl=en" target="_blank">App Page</a></h3>
+                            </div>
+                            <div id="text3" style="display:none">
                                 <h2>Multiplayer Snakes</h2>
                                 <h3>Web based multiplayer snake game. Responsible for Node.js and Socket.io server
 along with partial JavaScript implementation of client side interactions and the
@@ -224,14 +243,14 @@ actual game.</h3>
                                 <h3><a href="http://snakes.starlakes.com/" target="_blank">Play</a></h3>
                                 <h3><a href="https://github.com/tianruichen/SnakesonaPlane" target="_blank">Code</a></h3>
                             </div>
-                            <div id="text2" style="display:none">
+                            <div id="text4" style="display:none">
                                 <h2>Journey</h2>
                                 <h3>Road trip planning website that provides hotel and restaurant options along a given
 start and end location based on how far one wishes to drive each day. Responsible
 for Node.js backend, partial implementation of HERE API, and HTML/CSS.</h3>
                                 <h3><a href="https://github.com/tianruichen/Journey" target="_blank">Code</a></h3>
                             </div>
-                            <div id="text3" style="display:none">
+                            <div id="text5" style="display:none">
                                 <h2>Derailed!</h2>
                                 <h3>Mobile game in which a player places track pieces onto an unfinished railroad to keep a moving train from derailing.</h3>
                                 <h3><a href="https://play.google.com/store/apps/details?id=com.mindacceleration.derailed" target="_blank">Android App Page</a></h3>
@@ -266,7 +285,7 @@ for Node.js backend, partial implementation of HERE API, and HTML/CSS.</h3>
         <script>
             var count = 1,
                 pastCount,
-                maxCount = 3;
+                maxCount = 5;
             
             $('.carousel').carousel({
                 interval: false
